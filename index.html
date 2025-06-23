@@ -785,7 +785,7 @@
 
         const isScam = response.data.prediction === 1;
         const message = isScam 
-          ? '🚨 CRITICAL THREAT DETECTED! This job posting exhibits multiple security red flags. Immediate action required.'
+          ? '🚨 SCAM DETECTED!🚨 This job posting exhibits multiple critical security red flags. Please proceed with caution.'
           : '✅ SECURITY CLEARANCE GRANTED! This job posting has passed all security checks and appears legitimate.';
         
         showResult(message, isScam ? 'danger' : 'success');
